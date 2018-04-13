@@ -5,7 +5,7 @@ MINIKUBE_PATH="${MINIKUBE_BIN_DIRECTORY}/minikube"
 
 function get_minikube() {
     mkdir -p ${MINIKUBE_BIN_DIRECTORY}
-    $MINIKUBE_PATH version || curl -Lo $MINIKUBE_PATH https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x $MINIKUBE_PATH
+    $MINIKUBE_PATH version || curl -Lo $MINIKUBE_PATH https://storage.googleapis.com/minikube/releases/latest/minikube-darwin-amd64 && chmod +x $MINIKUBE_PATH
 }
 
 function check_or_start_cluster() {
